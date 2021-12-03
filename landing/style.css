@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("images/cursor.cur") auto;
+    font-weight: bold;
+}
+body{
+    display: block
+}
+.fpage{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("images/main-screen-bg.jpg")  no-repeat ;
+    background-size:cover ;
+    height: 100vh   ;
+    width: 100% ;
+    position: static;
+    margin-bottom: 30px;
+}
+.fpage_text{
+    width: 80%;
+    color: white;
+    font-size: 70px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.form{
+position: absolute;
+    margin-top: 20px;    padding: 10px;
+    background: url("images/main-form-bg.png")  no-repeat ;
+    background-size:cover ;
+    color: #fff;
+    width: 80%;
+}
+.form_title{
+    font-size: 30px ;
+}
+.form_select{
+    height: 35px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.form_select a{
+    color: #fff;
+    text-decoration: none;
+}
+.form_select a:hover{
+    border-bottom: white solid 2px;
+}
+.taganrog{
+    height: 1300px;
+    padding: 0 35px 0 35px;
+}
+.taganrog h{
+    padding-bottom:  30px ;
+    color:brown;
+    font-size: 30px;
+}
+.taganrog_intro p{
+    margin-top: 30px;
+}
+.big{
+    height: 80vh;
+}
+.small{
+    margin-top: 10px;
+
+}
+.small a img {
+
+    border: none;
+}
+.gallery{
+    padding: 30px 0 30px 0   ;
+    background-image: url("images/taganrog/damask-937607_960_720.webp");
+    height: 837px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 2px solid #000;
+}
+.records{
+    height: 1000px;
+
+}
+.records h{
+    padding: 0 30px 30px 30px;
+    /*color:brown;*/
+    font-size: 30px;
+    text-align: center;
+}
+
+

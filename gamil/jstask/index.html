@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи js</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="task1 task">
+            <div class="task1__title title">Задание 1</div>
+            <div class="task1__description description"> Даны 3 инпута и кнопка. По нажатию на кнопку получите числа, стоящие в этих инпутах и запишите их сумму в четвертый инпут.</div>
+            <input type="text" class="task1__input" placeholder="Введите число">
+            <input type="text" class="task1__input" placeholder="Введите число">
+            <input type="text" class="task1__input" placeholder="Введите число">
+            <button id="task1__button">Посчитать</button>
+            <input type="text" id="task1__result" placeholder="Результат">
+        </div>
+        <div class="task2 task">
+            <div class="task2__title title">Задание 2</div>
+            <div class="task2__description description">  
+                Даны N инпутов с классом .num и кнопка. По нажатию на кнопку получите числа, стоящие в этих инпутах и запишите их сумму в абзац с id="result".
+            </div>
+            <input type="text" class="num" placeholder="Введите число"></input>
+            <input type="text" class="num" placeholder="Введите число"></input>
+            <input type="text" class="num" placeholder="Введите число"></input>
+            <input type="text" class="num" placeholder="Введите число"></input>
+            <input type="text" class="num" placeholder="Введите число"></input>
+            <button id="task2__button">Посчитать</button>
+            <input type="text" id="task2__result" placeholder="Результат">
+        </div>
+        <div class="task3 task">
+            <div class="task3__title title">Задание 3</div>
+            <div class="task3__description description">  
+                Дан инпут. В него вводится число. По потери фокуса найдите сумму цифр этого числа.
+            </div>
+            <input type="text" id="task3__input" placeholder="Введите число"></input>
+            <input type="text" id="task3__result" placeholder="Результат">
+        </div>
+        <div class="task4 task">
+            <div class="task4__title title">Задание 4</div>
+            <div class="task4__description description">  
+                Дан инпут. В него вводятся числа через запятую. По потери фокуса найдите среднее арифметическое этих чисел (сумма делить на количество).
+            </div>
+            <input type="text" id="task4__input" placeholder="Введите число"></input>
+            <input type="text" id="task4__result" placeholder="Результат">
+        </div>
+        <div class="task5 task">
+            <div class="task5__title title">Задание 5</div>
+            <div class="task5__description description">  
+                Дан инпут. В него вводится ФИО через пробел. По потери фокуса запишите фамилию, имя и отчество в отдельные инпуты.
+            </div>
+            <input type="text" id="task5__fullname" placeholder="Введите ФИО"></input>
+            <input type="text" id="task5__name" placeholder="Имя"></input>
+            <input type="text" id="task5__surname" placeholder="Фамилия"></input>
+            <input type="text" id="task5__otch" placeholder="Отчество"></input>
+        </div>
+        <div class="task6 task">
+            <div class="task6__title title">Задание 6</div>
+            <div class="task6__description description">  
+                Дан инпут. В него вводится ФИО через пробел. ФИО вводится с маленькой буквы. Сделайте так, чтобы по потери фокуса инпутом, введенные фамилия, имя и отчество автоматически стали записанными с большой буквы (в том же инпуте).
+            </div>
+            <input type="text" id="task6__fullname" placeholder="Введите ФИО"></input>
+        </div>
+        <div class="task7 task">
+            <div class="task7__title title">Задание 7</div>
+            <div class="task7__description description">  
+                Дан инпут. В него вводится текст. По потери фокуса узнайте количество слов в этом тексте.
+            </div>
+            <input type="text" id="task7__text" placeholder="Введите текст"></input>
+            <input type="text" id="task7__res"></input>
+        </div>
+        <div class="task8 task">
+            <div class="task8__title title">Задание 8</div>
+            <div class="task8__description description">  
+                Дан инпут. В него вводится текст. По потери фокуса узнайте количество символов в самом длинном слове в этом тексте.
+            </div>
+            <input type="text" id="task8__text" placeholder="Введите текст"></input>
+            <input type="text" id="task8__res"></input>
+        </div>
+        <div class="task9 task">
+            <div class="task9__title title">Задание 9</div>
+            <div class="task9__description description">  
+                Дан инпут. В него вводится дата в формате 31.12.2016. По потери фокуса в этом же инпуте поставьте эту дату в формате 2016-12-31.
+            </div>
+            <input type="text" id="task9__text" placeholder="Дата в формате 31.12.2016"></input>
+            <input type="text" id="task9__res"></input>
+        </div>
+        <div class="task10 task">
+            <div class="task10__title title">Задание 10</div>
+            <div class="task10__description description">  
+                Дан инпут. В него вводится год рождения пользователя. По нажатию на кнопку выведите в абзац ниже сколько пользователю лет.
+            </div>
+            <input type="text" id="task10__text" placeholder="Введите год рождения"></input>
+            <input type="text" id="task10__res"></input>
+        </div>
+        <div class="task11 task">
+            <div class="task11__title title">Задание 11</div>
+            <div class="task11__description description">  
+                Дана ссылка. Дан чекбокс. По нажатию на ссылку меняйте состояние чекбокса с отмеченного на неотмеченное и наоборот.
+            </div>
+            <a href="#" id="task11__ref">Ссылка</a>
+            <div>
+                <input type="checkbox" id="task11__check" name="res"><label for="task11__check">Ссылка активна?</label>
+            </div>
+        </div>
+        <div class="task12 task">
+            <div class="task12__title title">Задание 12</div>
+            <div class="task12__description description">  
+                Даны чекбокс. Дана кнопка. По нажатию на кнопку сделайте все чекбоксы отмеченными.
+            </div>
+            <button id="task12__button">Нажми на меня!</button>
+            <div>
+                <input type="checkbox" class="task12__check">
+                <input type="checkbox" class="task12__check">
+                <input type="checkbox" class="task12__check">
+                <input type="checkbox" class="task12__check">
+            </div>
+        </div>
+        <div class="task13 task">
+            <div class="task13__title title">Задание 13</div>
+            <div class="task13__description description">  
+                Спросите у пользователя какой язык (html, css, js, php) он знает с помощью радио кнопочек. Выведите этот язык в абзац.
+            </div>
+            <div>
+                <div>
+                    <input type="radio" class="task13__radio" id="task13__radio1" name="task13__radio" value="html">
+                    <label for="task13__radio1">html</label>
+                </div>
+                <div>
+                    <input type="radio" id="task13__radio2" class="task13__radio" name="task13__radio"  value="css">
+                    <label for="task13__radio2">css</label>
+                </div>
+                <div>
+                    <input type="radio" id="task13__radio3" class="task13__radio" name="task13__radio"  value="js">
+                    <label for="task13__radio3">js</label>
+                </div>
+                <div>
+                    <input type="radio" id="task13__radio4" class="task13__radio" name="task13__radio"  value="php">
+                    <label for="task13__radio4">php</label>
+                </div>
+            </div>
+            <p id="task13__res">Результат выбора</p>
+        </div>
+        <div class="task14 task">
+            <div class="task14__title title">Задание 14</div>
+            <div class="task14__description description">  
+                Дан чекбокс. Дан инпут. Сделайте так, 
+                что если чекбокс отмечен - инпут видимый, если не отмечен - не видимый
+            </div>
+            <input type="text" id="task14__text" placeholder="Введите текст"></input>
+            <div>
+                <input type="checkbox" id="task14__check"><label for="task14__check">Невидимый</label>
+            </div>
+        </div>
+        <div class="task15 task">
+            <div class="task15__title title">Задание 15</div>
+            <div class="task15__description description">  
+                Даны чекбоксы. Под каждым чекбоксом размещен абзац. Сделайте так, что если чекбокс отмечен - соответствующий абзац видимый, а если не отмечен - не видимый.
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at, omnis molestias aut soluta incidunt dolores maiores id vero atque ad ipsam iure, dolor esse? Suscipit, nisi error! Praesentium, incidunt?</p>
+                <label class="checkbox-ios task__checkbox">
+                    <input class="checkbox-ios-switch"type="checkbox">
+                    <span class="checkbox-ios-switch"></span>
+                    Невидимый
+                </label>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at, omnis molestias aut soluta incidunt dolores maiores id vero atque ad ipsam iure, dolor esse? Suscipit, nisi error! Praesentium, incidunt?</p>
+                <label class="checkbox-ios task__checkbox">
+                    <input class="checkbox-ios-switch"type="checkbox">
+                    <span class="checkbox-ios-switch"></span>
+                    Невидимый
+                </label>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab at, omnis molestias aut soluta incidunt dolores maiores id vero atque ad ipsam iure, dolor esse? Suscipit, nisi error! Praesentium, incidunt?</p>
+                <label class="checkbox-ios task__checkbox">
+                    <input class="checkbox-ios-switch"type="checkbox">
+                    <span class="checkbox-ios-switch"></span>
+                    Невидимый
+                </label>
+            </div>
+        </div>
+        <div class="task16 task">
+            <div class="task16__title title">Задание 16</div>
+            <div class="task16__description description">  
+                Дан абзац. Даны чекбоксы 'перечеркнуть', 'сделать жирным', 'сделать красным'. Если соответствующий чекбокс отмечен - заданное действие происходит с абзацем (становится красным, например). Если чекбоксу снять отметку - действие отменяется.
+            </div>
+            <div>
+                <p class="task16__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatibus at sed repellat saepe praesentium officiis itaque voluptates, quos amet vitae atque deserunt in eaque aliquid quaerat velit laudantium beatae.</p>
+                <div class="flexContainer">
+                    <label class="checkbox-ios task__checkbox">
+                        <input class="checkbox-ios-switch" id="check16_line" type="checkbox">
+                        <span class="checkbox-ios-switch"></span>
+                        Перечеркнуть
+                    </label>
+                    <label class="checkbox-ios task__checkbox">
+                        <input class="checkbox-ios-switch"  id="check16_bold" type="checkbox">
+                        <span class="checkbox-ios-switch"></span>
+                        Сделать жирным
+                    </label>
+                    <label class="checkbox-ios task__checkbox">
+                        <input class="checkbox-ios-switch"  id="check16_red" type="checkbox">
+                        <span class="checkbox-ios-switch"></span>
+                        Сделать красным
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="task17 task">
+            <div class="task17__title title">Задание 17</div>
+            <div class="task17__description description">  
+                В инпут через запятую вводятся страны. По нажатию на кнопку сделайте так, чтобы эти страны записались в ul под инпутом (каждая страна отдельный li).
+            </div>
+            <input type="text" id="input17">
+        </div>
+        <div class="task18 task">
+            <div class="task18__title title">Задание 18</div>
+            <div class="task18__description description">  
+                Реализуйте раскрывающийся список. По умолчанию есть список стран (ul), по нажатию на страну внутри li со страной появляется список городов.
+            </div>
+            <ul class="task18__list">
+                <li>
+                    <span>Страна1</span>
+                    <ul class="task18_sub">
+                        <li>город1</li>
+                        <li>город2</li>
+                        <li>город3</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Страна2</span>
+                    <ul class="task18_sub">
+                        <li>город1</li>
+                        <li>город2</li>
+                        <li>город3</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Страна3</span>
+                    <ul class="task18_sub">
+                        <li>город1</li>
+                        <li>город2</li>
+                        <li>город3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="task19 task">
+            <div class="task19__title title">Задание 19</div>
+            <div class="task19__description description">  
+                Даны два селекта. В первом находятся страны, во втором - города. Сделайте так, чтобы когда выбирается определенная страна - в другом селекте появлялись города этой страны. В абзац ниже пишите выбранную страну и город через запятую.
+            </div>
+            <select>
+                <option value="1">country1</option>
+                <option value="2">country2</option>
+                <option value="3">country3</option>
+            </select>
+            <select class="task19__city-seclect task19__city-seclect1">
+                <option value="1">country1 city1</option>
+                <option value="2">country1 city2</option>
+                <option value="3">country1 city3</option>
+            </select>
+            <select class="task19__city-seclect task19__city-seclect2">
+                <option value="1">country2 city1</option>
+                <option value="2">country2 city2</option>
+                <option value="3">country2 city3</option>
+            </select>
+            <select class="task19__city-seclect task19__city-seclect3">
+                <option value="1">country3 city1</option>
+                <option value="2">country3 city2</option>
+                <option value="3">country3 city3</option>
+            </select>
+        </div>
+        <div class="task20 task">
+            <div class="task20__title title">Задание 20</div>
+            <div class="task20__description description">  
+                Реализуйте калькулятор валют. Есть два селекта - селект с исходной валюты, селект с той валютой, в которую мы хотим перевести деньги, инпут, в который вводится сумма для обмена. Курсы валют храните в массиве. Сделайте так, чтобы в селектах нельзя было выбрать две одинаковых валюты. 
+            </div>
+            <select class="task20__select">
+                <option value="0">Рубли</option>
+                <option value="1">Доллары</option>
+                <option value="2">Евро</option>
+            </select>
+            <select class="task20__select">
+                <option value="0">Рубли</option>
+                <option value="1" selected>Доллары</option>
+                <option value="2">Евро</option>
+            </select>
+            <input type="text" id="task20__input" placeholder="Введите значение">
+            <p id="task20__res">Результат</p>
+            <button id="task20__button">Посчитать</button>
+        </div>
+    </div>
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+    <script src="js/task4.js"></script>
+    <script src="js/task5.js"></script>
+    <script src="js/task6.js"></script>
+    <script src="js/task7.js"></script>
+    <script src="js/task8.js"></script>
+    <script src="js/task9.js"></script>
+    <script src="js/task10.js"></script>
+    <script src="js/task11.js"></script>
+    <script src="js/task12.js"></script>
+    <script src="js/task13.js"></script>
+    <script src="js/task14.js"></script>
+    <script src="js/task15.js"></script>
+    <script src="js/task16.js"></script>
+    <script src="js/task17.js"></script>
+    <script src="js/task18.js"></script>
+    <script src="js/task19.js"></script>
+    <script src="js/task20.js"></script>
+</body>
+</html>

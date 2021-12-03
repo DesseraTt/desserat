@@ -1,0 +1,56 @@
+body{
+    background-color: #373737;
+    display: block;
+    box-sizing: border-box;
+}
+
+.page li a{
+    color: magenta;
+    font-size: 30px;
+    text-decoration: none;
+    margin:40px;
+    padding: 20px 0px 5px 0px;
+}
+.page li a:hover{
+    border-bottom: magenta 2px solid;
+    
+}
+.page ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#clock div {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: magenta;
+}
+.my_image img{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    object-position: bottom; 
+}
+.my_image{
+    margin:0 auto;
+width: 300px;
+}
+@media (max-width:800px) {
+    .page ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:480px) {
+    .page ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pageWraper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.pageWraper .whitePart{
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+}
+
+/*TRBL*/
+.pageWraper .blackPart{
+    background-color: black;
+    color: white;
+    padding: 10px 30px 30px 30px;
+}
+
+
+.pageWraper .whitePart .name{
+    color: grey;
+    font-size: 30px;
+}
+
+.pageWraper .whitePart .nav{
+    margin-top: 30px;
+    text-align: right;
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+}
+
+.pageWraper .whitePart .nav a{
+    padding: 0px 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+.pageWraper .whitePart .nav .activeLink{
+    font-weight: bold;
+}
+
+.pageWraper .whitePart .titleContetAboutMe{
+    margin: 30px 0px;
+    border-bottom: 2px solid black;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.pageWraper .whitePart .contentAboutMe .textAboutMe{
+    float: right;
+    width: 60%;
+}
+
+.clr{
+    clear: both;
+}
+
+.pageWraper .whitePart .contentAboutMe .textAboutMe div{
+    margin: 15px;
+    font-size: 12px;
+}
+
+.pageWraper .whitePart .contentAboutMe .textAboutMe .fewWordsAboutMe{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 40%;
+}
+
+.pageWraper .whitePart .contentAboutMe .textAboutMe .quote{
+    background-color: #eee;
+    padding: 10px;
+}
+
+.pageWraper .whitePart .contentAboutMe .textAboutMe .quote p:first-child{
+    font-style: italic;
+}
+
+.pageWraper .whitePart .contentAboutMe .textAboutMe .quote p:last-child{
+    text-align: right;
+}
+
+.pageWraper .whitePart .contentAboutMe .myImg{
+    float: left;
+    width: 40%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.pageWraper .whitePart .contentAboutMe .myImg img{
+    width: 100%;
+}
+
+.pageWraper .whitePart .mySkills {
+    border-top: 2px solid black;
+    padding: 30px 0;
+    margin: 15px;
+}
+
+.pageWraper .whitePart .mySkills .skills{
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.pageWraper .whitePart .mySkills .skills .titleSkills{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 45%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.pageWraper .whitePart .mySkills .whatCan{
+    float: right;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.pageWraper .whitePart .mySkills .titleWhatCan{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 40%;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.pageWraper .whitePart .mySkills .skills .photoshop,
+.pageWraper .whitePart .mySkills .skills .windows,
+.pageWraper .whitePart .mySkills .skills .offices,
+.pageWraper .whitePart .mySkills .skills .html,
+.pageWraper .whitePart .mySkills .skills .css{
+    background-color: #ccc;
+    margin: 4px 0px;
+    font-style: italic;
+    padding: 5px;
+}
+
+.pageWraper .whitePart .mySkills .skills .photoshop{
+    width: 10%;
+}
+
+.pageWraper .whitePart .mySkills .skills .windows{
+    width: 100%;
+}
+
+.pageWraper .whitePart .mySkills .skills .offices{
+    width: 70%;
+}
+
+.pageWraper .whitePart .mySkills .skills .html{
+    width: 60%;
+}
+
+.pageWraper .whitePart .mySkills .skills .css{
+    width: 50%;
+}
+
+.pageWraper .whitePart .mySkills .skills .line div{
+    float: left;
+    width: 20%;
+    text-align: right;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+
+.pageWraper .whitePart .mySkills .skills .line div.clr{
+    border: none;
+    width: 100%;
+}
+
+.pageWraper .whitePart .mySkills .whatCan .whatCanIdo{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pageWraper .whitePart .mySkills .whatCan .whatCanIdo li{
+    margin-bottom: 10px;
+}
+
+.pageWraper .whitePart .mySkills .whatCan .whatCanIdo li:before{
+    content: "\2714";
+}
+
+.footerNav{
+    text-align: left;
+    padding-top: 20px;
+    border-top: 2px solid whitesmoke;
+}
+
+.footerNav a{
+    color: white;
+    text-decoration: none;
+}
+
+.pageWraper .blackPart .footer .addres,
+.pageWraper .blackPart .footer .contacts,
+.pageWraper .blackPart .footer .socialLink{
+    margin: 30px 0;
+    float: left;
+    width: 33.3%;
+}
+
+.pageWraper .blackPart .footer .socialLink a{
+    color: white;
+    text-decoration: none;
+}

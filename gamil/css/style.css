@@ -1,0 +1,159 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/* */
+body {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 20px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: 10px;
+}
+
+.flex-item {
+	width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+	text-align: center;
+}
+
+.tasks {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid white;
+	max-width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.tasks__content {
+	width: 100%;
+}
+
+.tasks__list li{
+	margin: 0 0 10px 0;
+	text-indent: 10px;
+}
+
+.tasks__list li:last-child{
+	margin: 0;
+}
+
+.tasks__list li a{
+	display: block;
+	padding: 10px 0;
+}
+
+.tasks__list li {
+	overflow-x: hidden;
+	position: relative;
+    z-index: 0;
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+
+.tasks__list li:hover {
+	opacity: 1;
+}
+
+.bg {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	top: 0;
+	left: -150%;
+	width: 25px;
+	transform: skewX(-45deg); 
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+}
+
+.tasks__list li:hover .bg {
+	animation: flareAnimation 3s infinite linear; 
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.tasks__list li::before{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	content: "";
+	background-color: white;
+	height: 1px;
+	width: 0px;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+.tasks__list li::after{
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	right: 0;
+	content: "";
+	background-color: white;
+	height: 1px;
+	width: 0px;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+.tasks__list li:hover::before,
+.tasks__list li:hover::after {
+	width: 100%;
+}

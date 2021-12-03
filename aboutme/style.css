@@ -2,6 +2,12 @@
     font-family: 'Lobster bold';
     src: url("Lobster.ttf");
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .content{
     clear: both;
 }
@@ -72,15 +78,88 @@ img{
     width:300px;
     height: 300px;
 }
+img:hover{
+    filter:blur(3px);
+}
 .skills{
-/*color:#fff;*/
+    float: left;
+    width: 50%;
+    margin-right: 350px;
 }
  .mySkills{
      padding: 5px;
+
+     margin-bottom: 10px;
 background-color:#000000;
-    width: 10%;
+    width: 20%;
   color:#ffffff;
 }
- .html{
+ .shtml{
+     margin-bottom: 3px;
      background-color: gray;
+     width: 98%;
  }
+ .css{
+     margin-bottom: 3px;
+     background-color: gray;
+     width:80%;
+ }
+ .js{
+     margin-bottom: 3px;
+     background-color: yellow;
+     width: 100%;
+ }
+
+ .cplusplus{
+     margin-bottom: 3px;
+     background-color: gray;
+     width: 55%;
+ }
+
+ .dota{
+     margin-bottom: 3px;
+     background-color: red;
+     width: 30%;
+ }
+ .perf{
+     display: block;
+     clear: both;
+     margin-bottom: 150px;
+ }
+ .whaticando{
+     color:magenta;
+     float: left;
+ }
+ ul{
+     margin-bottom: 30px;
+ }
+ li{
+     background-color: #000;
+     margin-bottom: 3px;
+ }
+.black{
+    color:#fff;
+}
+
+.footer{
+    display:flex;
+    justify-content: space-between;
+}
+ .Adress,
+ .contacts,
+ .social{
+
+     padding: 5px;
+
+}
+
+.social a{
+    text-decoration: none ;
+    color:#ffffff;
+}
+.social a:hover{
+    color:magenta;
+}
+div{
+    box-sizing: border-box;
+}
