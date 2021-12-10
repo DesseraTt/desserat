@@ -39,7 +39,7 @@
 .big{
     padding-top: 15px;
     margin:0 auto;
-   
+    cursor: pointer;
     text-align:center;
     width: 600px;
     height: 600px;
@@ -88,4 +88,26 @@
 .active,
 .slider-dots_item:hover {
     background-color: #aaa;
+}
+.blur{
+    z-index: 2;
+background-color: rgba(0,0,0,0.5);
+cursor:pointer;
+position: absolute;
+height: 100vh;
+width: 100vw;
+left: 0;
+top: 0;
+}
+.blur_img{
+    z-index: 3;
+    width: 900px;
+    height: 900px;
+    object-fit: contain;
+}
+.big_container{
+    width: auto;
+    height: auto;
+    margin:0 auto;
+    text-align:center;
 }

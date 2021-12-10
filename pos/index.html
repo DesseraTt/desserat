@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Позиционирование</title>
+</head>
+<body>
+<div class="box fixed">
+    <h>fixed</h> привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы
+</div>
+<div class="box fixed1">
+    fixed
+</div>
+<div class="box fixed2">
+    fixed
+</div>
+
+
+<div class="box absolute">
+    <h>absolute</h> Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+</div>
+<div class=" box relative">
+    relative
+</div>
+<div class=" box relative">
+    <h>relative</h>:положение элемента устанавливается относительно его исходного места
+</div>
+<div class=" box relative">
+    <div class=" box inherit">
+        <div class=" box inherit">
+             <h> inherit</h>:наследует значение родителя(relative)
+        </div>
+    
+    </div>
+</div>
+<div class=" box static">
+    <h>Static</h>:элементы отображаются как обычно. 
+</div>
+<div class=" box static">
+    static
+</div>
+<div class=" box  static">
+    <div class=" box inherit">
+        <h> inherit</h>:наследует значение родителя(static)
+    </div>
+</div>
+
+<div class=" box sticky">
+    Скролл вниз..
+   <div>
+    <dl>
+        <dt>A</dt>
+        <dd>b</dd>
+        <dd>c</dd>
+        <dd>d</dd>
+        <dd>e</dd>
+        <dd>f</dd>
+      </dl>
+   </div>
+    
+</div>
+<div class=" box sticky">
+    <h> sticky</h> элемент обрабатывается как относительно позиционированный до тех пор, пока он не пересечёт заданный порог, после чего он будет считаться фиксированным, пока не достигнет границы его родителя
+</div>
+</body>
+</html>

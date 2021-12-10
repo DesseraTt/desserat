@@ -1,7 +1,5 @@
 *{
     font-size: 20px;
-    font-weight: bold;
-
 }
 input{
     margin: 5px;
@@ -18,11 +16,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../landing/images/taganrog/damask-937607_960_720.webp") center/cover no-repeat;
-}
-
-p{
-    font-weight:bold;
+    background-color: #373737;
+    color: magenta;
+  
 }
 .blur{
     background-color: aquamarine;
@@ -35,4 +31,51 @@ p{
 }
 .visible{
     display:block;
+}
+.task{
+    width: 70%;
+  
+    max-height: 350px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+p{
+    color:#fff;
+}
+#link{
+    text-decoration: none;
+}
+
+.t24{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#ul_t27{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+ }
+.lined{
+    text-decoration: line-through;
+}
+.red{
+    color: red;
+}
+.bold{
+    font-weight: bold;
+}
+.t28{
+    list-style: none;
+    cursor: pointer;
+}
+.t28__{
+    list-style: none;
+color: #fff;
+}
+ul{
+    padding: 0;
 }
